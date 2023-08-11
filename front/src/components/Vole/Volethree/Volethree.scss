@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Spartan:wght@300;400;500&display=swap");
+
+
+:root{
+  --PrimaryColorvole: hsl(225, 50%, 48%);
+  --SecondaryColorvole: hsl(180, 17%, 95%);
+  --colorOnevole: hsl(15, 74%, 70%);
+  --colorTwovole: hsl(28, 100%, 82%);
+  --HoverColorvole: hsl(225, 56%, 59%); 
+  --whiteColorvole: hsl(0, 0%, 100%);
+  --blackColorvole: hsl(0, 0%, 12%);
+  --textColorvole: hsl(240, 1%, 48%);
+  --borderColorvole: hsl(0, 0%, 83%);
+  --whiteColorDeamvole: hsl(0, 0%, 93%);
+  --greyBgvole: hsl(0, 0%, 96%);
+  --greyTextvole: rgb(145, 145, 145);
+  --inputColorvole: hsl(330, 12%, 97%);
+  --boxShadowvole:  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  --transition: .4s ease-in-out;
+}
+.support{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Spartan", sans-serif;
+    transition: .2s ease;
+        .sectionContainer{
+        .titlesDiv{
+           text-align: center;
+            small{
+                letter-spacing: .8rem;
+                text-transform: uppercase;
+                font-size: 13px;
+                color: var(--blackColorvole);
+                line-height: 1.5rem;
+            }
+        }
+
+        .infoDiv{
+         margin-top: 2rem;
+          gap: 1.5rem;
+
+          .textDiv{
+            gap: 1.5rem;
+
+            .singleInfo{
+                .number{
+                    background: var(--PrimaryColorvole);
+                    padding: 5px 12px;
+                    width: 40px;
+                    border-radius: 3rem;
+                    text-align: center;
+                    font-size: 13px;
+                    font-style: 700;
+                    color: var(--whiteColorvole);
+                }
+                .colorOnevole{
+                    background: var(--colorOnevole);
+                    
+                }
+                .colorTwovole{
+                    background: var(--colorTwovole);
+                }
+            }
+
+            
+          }
+
+          .imgDiv{
+            margin: auto;
+            img{
+                width: 100%;
+                max-width: 420px;
+                
+            }
+          }
+        }
+    }
+}
+@media screen and (min-width: 570px){
+.support{
+    .sectionContainer{  
+        .infoDiv{
+            .textDiv{
+                margin-top: 2rem;
+                grid-template-columns: repeat(2,1fr);  
+            }
+        }
+    }
+}
+}
+@media screen and (min-width: 1332px){
+.support{
+    .sectionContainer{
+        .infoDiv{
+            grid-template-columns: repeat(2,1fr);  
+            gap: 2rem;
+            margin-top: 5rem;
+            
+            .textDiv{
+                margin-top: 0rem;
+                grid-template-columns: repeat(1,1fr);  
+            }
+        }
+    }
+}
+}
+@media screen and (min-width: 768px){
+.support{
+    .sectionContainer{
+        .infoDiv{
+            gap: 1rem;
+            .textDiv{
+                .singleInfo{
+                    p{
+                        max-width: 500px;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+// ::selection{
+//     background: var(--PrimaryColorvole);
+//     color: var(--whiteColorvole);
+// }
+
+// ::-webkit-scrollbar{
+//     width: 10px;
+//     background: var(--greyBgvole);
+// }
+// ::-webkit-scrollbar-thumb{
+//     background: var(--PrimaryColorvole);
+//     border-radius: 10px;
+// }

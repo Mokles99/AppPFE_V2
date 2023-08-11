@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Spartan:wght@300;400;500&display=swap");
+:root {
+  --Primaryvolecolor: hsl(225, 50%, 48%);
+  --SecondaryVolecolor: hsl(180, 17%, 95%);
+  --colorOnevole: hsl(15, 74%, 70%);
+  --colorTwovole: hsl(28, 100%, 82%);
+  --HoverColorvole: hsl(225, 56%, 59%);
+  --whiteColorvole: hsl(0, 0%, 100%);
+  --blackColorvole: hsl(0, 0%, 12%);
+  --textColorvole: hsl(240, 1%, 48%);
+  --borderColorvole: hsl(0, 0%, 83%);
+  --whiteColorDeamvole: hsl(0, 0%, 93%);
+  --greyBgvole: hsl(0, 0%, 96%);
+  --greyTextvole: rgb(145, 145, 145);
+  --inputColorvole: hsl(330, 12%, 97%);
+  --boxShadowvole: box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  --transition: .4s ease-in-out;
+}
+
+.volefour {
+  background: var(--SecondaryVolecolor);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Spartan", sans-serif;
+  transition: 0.2s ease;
+}
+.volefour .volefourinfoContainer .titleDiv {
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+.volefour .volefourinfoContainer .cardsDiv {
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.volefour .volefourinfoContainer .cardsDiv .singleCard {
+  background: var(--whiteColorvole);
+  padding: 3rem 2rem;
+  border-radius: 10rem;
+  gap: 1rem;
+  text-align: center;
+  margin: auto;
+  height: 320px;
+  width: 90%;
+  max-width: 250px;
+}
+.volefour .volefourinfoContainer .cardsDiv .singleCard .iconDiv {
+  justify-content: center;
+  margin: auto;
+  background: var(--Primaryvolecolor);
+  width: -moz-max-content;
+  width: max-content;
+  height: 55px;
+  padding: 1rem;
+  border-radius: 3rem;
+}
+.volefour .volefourinfoContainer .cardsDiv .singleCard .iconDiv .icon {
+  color: var(--whiteColorvole);
+}
+.volefour .volefourinfoContainer .cardsDiv .singleCard .cardTitle {
+  color: var(--blackColorvole);
+  font-weight: 700;
+}
+.volefour .volefourinfoContainer .cardsDiv .singleCard .colorOnevole {
+  background: var(--colorOnevole);
+}
+.volefour .volefourinfoContainer .cardsDiv .singleCard .colorTwo {
+  background: var(--colorTwovole);
+}
+
+@media screen and (min-width: 570px) {
+  .volefour .volefourinfoContainer .titleDiv {
+    flex-direction: row;
+  }
+  .volefour .volefourinfoContainer .titleDiv h2 {
+    text-align: left;
+    max-width: 500px;
+  }
+  .volefour .volefourinfoContainer .cardsDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .volefour .volefourinfoContainer {
+    padding: 0 6rem;
+  }
+  .volefour .volefourinfoContainer .titleDiv {
+    width: 90%;
+    margin: auto;
+    align-items: center;
+  }
+  .volefour .volefourinfoContainer .cardsDiv {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .volefour .volefourinfoContainer .cardsDiv .singleCard {
+    max-width: 260px;
+    padding: 3rem;
+  }
+}/*# sourceMappingURL=Volefour.css.map */

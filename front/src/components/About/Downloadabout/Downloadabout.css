@@ -1,0 +1,49 @@
+section#download {
+  background-image: linear-gradient(to right, #10b5ca, #00a5c4, #0094bd, #0084b3, #0378af);
+  text-align: center;
+  border-radius: 20px 50px 20px 50px;
+  margin: auto;
+  color: #fff;
+  width: 80%;
+  padding: 0.5rem;
+  }
+  
+  .download h2 {
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+    position: relative;
+    padding-bottom: 1rem;
+  }
+  
+  .download h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 10%;
+    height: 1px;
+    background: var(--color-white);
+    transform: translateX(-50%);
+  }
+  .download-icons {
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    margin: 2rem;
+  }
+  
+  .download-icon {
+    margin: 1rem 2rem;
+    border: 2px solid #fff;
+    border-radius: 20px 50px 20px 50px;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }

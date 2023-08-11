@@ -1,0 +1,157 @@
+:root {
+  --PrimaryColor:hsl(199,100%,33%);
+  --SecondaryColor:hsl(187,85%,43%);
+  --gardientColor: linear-gardient(to right, #8BF0FD,#0073A8);
+  --whiteColor: hsl(0,0%,100%);
+  --blackColor:hsl(201,33%,16%);
+  --textColor:hsl(240,4%,36%);
+  --whiteColorDeam:hsl(0,0%,93%);
+  --greyText: rgb(190,190,190);
+  --inputColor:rgb(239,239,239);
+  --bodyColor:rgb(240,240,246);
+  --cardBG: rgb(225,225,235);
+}
+
+.tours .secContainer-tour .secTitle-tours {
+  color: var(--textColor);
+  font-size: 45px;
+  text-align: center;
+}
+.tours .secContainer-tour .tourContainer {
+  display: grid;
+  gap: 1rem;
+}
+.tours .secContainer-tour .tourContainer .singleTour {
+  width: 100%;
+  position: relative;
+  border: 1px solid var(--greyColor);
+  padding-bottom: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 4s ease;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.tours .secContainer-tour .tourContainer .singleTour:hover {
+  background: var(--greyColor);
+}
+.tours .secContainer-tour .tourContainer .singleTour .imgDiv {
+  height: 200px;
+  width: 100%;
+  border-radius: 1rem;
+  border: 5px solid var(--greyBg);
+  box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.41);
+  overflow: hidden;
+}
+.tours .secContainer-tour .tourContainer .singleTour .imgDiv img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+.tours .secContainer-tour .tourContainer .singleTour .imgDiv:hover img {
+  transform: scale(1.1);
+}
+.tours .secContainer-tour .tourContainer .singleTour .tourInfo {
+  padding: 0 1rem;
+}
+.tours .secContainer-tour .tourContainer .singleTour .tourInfo .tourTitle {
+  font-size: 15px;
+  color: var(--PrimaryColor);
+  font-weight: 600;
+}
+.tours .secContainer-tour .tourContainer .singleTour .tourInfo .stars_review {
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+.tours .secContainer-tour .tourContainer .singleTour .tourInfo .stars_review .stars {
+  color: rgb(255, 215, 0);
+}
+.tours .secContainer-tour .tourContainer .singleTour .tourInfo .stars_review .stars .icon {
+  font-size: 14px;
+}
+.tours .secContainer-tour .tourContainer .singleTour .tourInfo .stars_review .custReview {
+  font-size: 13px;
+  transform: translateY(-2px);
+}
+.tours .secContainer-tour .tourContainer .singleTour .tourInfo p {
+  padding-bottom: 1rem;
+}
+.tours .secContainer-tour .tourContainer .singleTour .tourInfo .btn {
+  padding: 0.6rem 1.5rem;
+  background-image: linear-gradient(to right, #10b5ca, #00a5c4, #0094bd, #0084b3, #0073a8);
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s ease;
+}
+.tours .secContainer-tour .tourContainer .singleTour .tourInfo:hover {
+  color: var(--PrimaryColor);
+  border: 2px solid var(--greyText);
+}
+.tours .secContainer-tour .tourContainer .price {
+  position: absolute;
+  padding: 10px;
+  background-image: linear-gradient(to right, #10b5ca, #00a5c4, #0094bd, #0084b3, #0073a8);
+  top: 0;
+  right: 0;
+  color: white;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.home-event {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.home-event .overlay-event {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(47, 106, 127);
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  mix-blend-mode: hard-light;
+}
+.home-event video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home-event .event-content {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 8rem 1.5rem 3rem;
+  display: flex;
+  row-gap: 3rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  color: var(--whiteColor);
+  z-index: 100;
+}
+.home-event .event-content .textDivevent {
+  padding: 2rem;
+  width: -moz-max-content;
+  width: max-content;
+}
+.home-event .event-content .textDivevent .eventTitle {
+  position: relative;
+  font-size: 45px;
+  text-align: center;
+}/*# sourceMappingURL=evenement.css.map */

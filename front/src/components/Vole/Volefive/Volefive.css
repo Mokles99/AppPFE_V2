@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Spartan:wght@300;400;500&display=swap");
+:root {
+  --Primaryvolecolor: hsl(225, 50%, 48%);
+  --Secondaryvolecolor: hsl(180, 17%, 95%);
+  --colorvoleOne: hsl(15, 74%, 70%);
+  --colorvoleTwo: hsl(28, 100%, 82%);
+  --HovervoleColor: hsl(225, 56%, 59%);
+  --whitevoleColor: hsl(0, 0%, 100%);
+  --blackvoleColor: hsl(0, 0%, 12%);
+  --textvoleColor: hsl(240, 1%, 48%);
+  --bordervoleColor: hsl(0, 0%, 83%);
+  --whitevoleColorDeam: hsl(0, 0%, 93%);
+  --greyvoleBg: hsl(0, 0%, 96%);
+  --greyvoleText: rgb(145, 145, 145);
+  --inputvoleColor: hsl(330, 12%, 97%);
+  --boxvoleShadow: box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  --transition: .4s ease-in-out;
+}
+
+.lounge {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Spartan", sans-serif;
+  transition: 0.2s ease;
+}
+.lounge .sectionContainer {
+  gap: 1.5rem;
+}
+.lounge .sectionContainer .imgDiv {
+  margin: auto;
+}
+.lounge .sectionContainer .imgDiv img {
+  width: 100%;
+  max-width: 430px;
+}
+.lounge .sectionContainer .textDiv .grids {
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+.lounge .sectionContainer .textDiv .grids .singleGrid .gridTitle {
+  display: block;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--blackColor);
+}
+
+@media screen and (min-width: 570px) {
+  .lounge .sectionContainer .textDiv .grids {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .lounge .sectionContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .lounge .sectionContainer .textDiv {
+    grid-area: 1;
+  }
+  .lounge .sectionContainer .textDiv .grids {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}/*# sourceMappingURL=Volefive.css.map */

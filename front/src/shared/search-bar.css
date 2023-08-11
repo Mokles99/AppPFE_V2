@@ -1,0 +1,88 @@
+:root{
+    --PrimaryColor:hsl(199,100%,33%);
+    --primaryHover:#0c988a;
+    --secHoverColor:#253b53;
+    --SecondaryColor :hsl(187,85%,43%);
+    --gardientColor: linear-gardient(to right, hsl(187, 76%, 56%),hsl(199,100%,33%));
+    /* --gardientColor: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,181,202,1) 51%, rgba(0,115,168,1) 100%); */
+    --whiteColor: hsl(0,0%,100%);
+    --blackColor:hsl(201,33%,16%);
+    --textColor:hsl(240,4%,36%);
+    --whiteColorDeam:hsl(0,0%,93%);
+    --greyText: rgb(190,190,190);
+    --greyBg: hsl(0, 0%, 96%); 
+    --inputColor:rgb(239,239,239);
+    --bodyColor:rgb(240,240,246);
+    --cardBG : rgb(225,225,235);
+  }
+
+  .custom-search-section{
+      box-shadow: rgba(17,12,46,0.15) 0px 0px 5px 0px;
+      padding: 0.5rem 1rem ;
+      border-radius: 40px;
+      width: max-content;
+      display: grid;
+      gap: 1rem;
+      
+  }
+
+  .custom-search-section button{
+      margin-top: 31px !important;
+      border-radius: 8px;
+      color: #fff !important;
+  }
+  .search-bar{
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    box-shadow: rgba(17,12, 46, 0.15) 0px 48px 100px 0px;
+    width:max-content;
+    /* margin-top: 50px; */
+    display: grid;
+    gap: 1rem;
+    display: grid ;
+
+   
+}
+
+.custom-search-section .form-glob{
+    gap: 10px !important;
+}
+.form-glob{
+    display: grid ;
+    grid-template-columns: repeat(3,1fr);
+   
+}
+
+.form__group span{
+    font-size:1.8rem;
+    color:rgb(236, 21, 21);
+}
+.form__group input{
+    border:none;
+    font-size: 0.9rem;
+    color:red;
+
+}
+.form__group input:focus{
+      margin-bottom: 0;
+}
+.form__group h6{
+    margin-bottom: 0;
+}
+
+.custom-search-section  .form__group-fast{
+    padding-right: 10px !important;
+    margin: 1rem auto !important;
+}
+.form__group-fast{
+     border-right: 2px solid #ddd;
+
+}
+.search__icon i{
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    background: var(--SecondaryColor);
+    color:#ddd;
+    border-radius: 10px 5px 10px 5px;
+    cursor:pointer
+}

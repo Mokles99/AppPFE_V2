@@ -1,0 +1,27 @@
+:root {
+  --PrimaryColor:hsl(199,100%,33%);
+  --SecondaryColor:hsl(187,85%,43%);
+  --gardientColor: linear-gardient(to right, #8BF0FD,#0073A8);
+  --whiteColor: hsl(0,0%,100%);
+  --blackColor:hsl(201,33%,16%);
+  --textColor:hsl(240,4%,36%);
+  --whiteColorDeam:hsl(0,0%,93%);
+  --greyText: rgb(190,190,190);
+  --inputColor:rgb(239,239,239);
+  --bodyColor:rgb(240,240,246);
+  --cardBG: rgb(225,225,235);
+}
+
+.thank__you {
+  text-align: center;
+}
+.thank__you span i {
+  font-size: 10rem;
+  color: green;
+  padding-top: 8rem;
+}
+.thank__you h1 {
+  font-size: 3.6rem;
+  padding-top: 8rem;
+  font-family: "Brush Script MT";
+}/*# sourceMappingURL=thankYou.css.map */

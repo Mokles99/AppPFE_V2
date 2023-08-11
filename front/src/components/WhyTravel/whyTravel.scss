@@ -1,0 +1,147 @@
+:root{
+    --PrimaryColor:hsl(199,100%,33%);
+    --SecondaryColor :hsl(187,85%,43%);
+    --gardientColor: linear-gardient(to right, hsl(187, 76%, 56%),hsl(199,100%,33%));
+    /* --gardientColor: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,181,202,1) 51%, rgba(0,115,168,1) 100%); */
+    --whiteColor: hsl(0,0%,100%);
+    --blackColor:hsl(201,33%,16%);
+    --textColor:hsl(240,4%,36%);
+    --whiteColorDeam:hsl(0,0%,93%);
+    --greyText: rgb(190,190,190);
+    --greyBg: hsl(0, 0%, 96%); 
+    --inputColor:rgb(239,239,239);
+    --bodyColor:rgb(240,240,246);
+    --cardBG : rgb(225,225,235);
+  }
+
+
+  .about{
+    .secContainer{
+        .title{
+            color:var(--textColor);
+            line-height: 1.5rem;
+            padding-bottom: .5rem;
+            text-align:center;
+            font-size: 1.5rem;
+            
+
+        }
+        .mainContent{
+            gap: 1rem;
+            display: grid ;
+            grid-template-columns: repeat(3,1fr);
+
+            .singleItem{
+                text-align: center;
+
+                img{
+                    //background: rgba(247, 144, 54, 0.265);
+                    background-image: linear-gradient(to right, #10b5ca, #00a5c4, #0094bd, #0084b3, #0073a8);
+                    width: 100px;
+                    border-radius: 50%;
+                    padding: 1rem;
+                }
+                h3{
+                    font-weight: 700;
+                    color:var(--blackColor);
+                    padding: .5rem;
+                }
+                p{
+                    font-size: 13px;
+                    font-weight: 500;
+                    padding-bottom: .5rem;
+                    color:var(--textColor);
+                }
+            }
+        }
+        .videoCard{
+            margin-top:2rem;
+            border-radius: 20px ;
+            background-image: url(../../Assets/map.jpeg);
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+
+
+            .cardContent{
+                gap: 2rem;
+                display:grid;
+                border-radius: 20px ;
+                grid-template-columns: repeat(2,1fr);
+                padding: 2rem 1rem;
+                background-image:linear-gradient(to bottom, #7c7be24f, #006fad5e, #00525f6e, #0094bd85, #0c0f078c);
+            
+
+                .cardText{
+                    h2{
+                        color: var(--whiteColor);
+                        font-weight: 600;
+                        padding-bottom: 1rem;
+                    }
+
+                    p{
+                        color:var(--whiteColor);
+                        opacity: .7;
+                        font-size: 12px;
+                        font-weight: 400;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+
+            .cardVideo
+
+            {
+                border: 2px solid var(--whiteColor);
+                height: 200px;
+                width:100%;
+                border-radius: 10px;
+                overflow: hidden;
+                video{
+                    height: 100%;
+                    width:100%;
+                    object-fit: cover;
+
+                }
+
+            }
+        }
+    }
+  }
+
+  @media screen and (min-width:720px){
+    .about{
+        .secContent{
+            .videoCard{
+                .cardContent{
+                    gap: 4rem;
+                    padding: 4rem 3rem;
+
+
+                    .cardText{
+                        h2{
+                            font-size: 2rem;
+                        }
+                        p{
+                         opacity: .7;
+                          font-size: 15px;   
+                        }
+                    }
+                }
+              .cardContent{
+                 grid-template-columns: repeat(2,1fr) !important;
+              }  
+            }
+        }
+    }
+  }
+
+  @media screen and (min-width:1024px){
+     .about{
+        .secContainer{
+            .mainContent{
+                padding: 2.5rem 0;
+            }
+        }
+     }
+  }

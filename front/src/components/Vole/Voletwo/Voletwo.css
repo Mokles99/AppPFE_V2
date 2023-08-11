@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Spartan:wght@300;400;500&display=swap");
+:root {
+  --PrimaryColorvole: hsl(225, 50%, 48%);
+  --SecondaryColorvole: hsl(180, 17%, 95%);
+  --colorOnevole: hsl(15, 74%, 70%);
+  --colorTwovole: hsl(28, 100%, 82%);
+  --HoverColorvole: hsl(225, 56%, 59%);
+  --whiteColorvole: hsl(0, 0%, 100%);
+  --blackColorvole: hsl(0, 0%, 12%);
+  --textColorvole: hsl(240, 1%, 48%);
+  --borderColorvole: hsl(0, 0%, 83%);
+  --whiteColorDeamvole: hsl(0, 0%, 93%);
+  --greyBgvole: hsl(0, 0%, 96%);
+  --greyTextvole: rgb(145, 145, 145);
+  --inputColorvole: hsl(330, 12%, 97%);
+  --boxShadowvole: box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  --transition: .4s ease-in-out;
+}
+
+.voletwo {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Spartan", sans-serif;
+  transition: 0.2s ease;
+}
+.voletwo .voletwoContainer {
+  width: 100%;
+  padding: 1.5rem;
+  border: 2px solid var(--greyBgvole);
+  border-radius: 16px;
+  row-gap: 2rem;
+}
+.voletwo .voletwoContainer .btns {
+  background: var(--SecondaryColorvole);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+.voletwo .voletwoContainer .btns .singleBtn {
+  padding: 0.8rem 1.5rem;
+  font-size: 13px;
+  border-radius: 3rem;
+  width: 80%;
+  text-align: center;
+}
+.voletwo .voletwoContainer .btns .singleBtn:hover {
+  background: var(--PrimaryColorvole);
+  color: var(--whiteColorvole);
+  font-weight: 500;
+  transition: 0.4s ease;
+}
+.voletwo .voletwoContainer .btns .active {
+  background: var(--PrimaryColorvole);
+  color: var(--whiteColorvole);
+  font-weight: 500;
+}
+.voletwo .voletwoContainer .voletwoInputs {
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.voletwo .voletwoContainer .voletwoInputs .voletwoInput .voleiconDiv {
+  padding: 16px 10px;
+  border-radius: 3rem;
+  background: var(--SecondaryColorvole);
+  margin-right: 1rem;
+}
+.voletwo .voletwoContainer .voletwoInputs .voletwoInput .voleiconDiv .icon {
+  color: var(--blackColorvole);
+  opacity: 0.7;
+}
+.voletwo .voletwoContainer .voletwoInputs .voletwoInput .texts h4 {
+  padding-top: 0;
+  padding-bottom: 0.7rem;
+  color: var(--blackColorvole);
+  font-weight: 700;
+}
+.voletwo .voletwoContainer .voletwoInputs .voletwoInput .texts input {
+  width: 95%;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.voletwo .voletwoContainer .voletwoInputs .voletwoInput .texts input::-moz-placeholder {
+  font-size: 12px;
+  opacity: 0.5;
+}
+.voletwo .voletwoContainer .voletwoInputs .voletwoInput .texts input::placeholder {
+  font-size: 12px;
+  opacity: 0.5;
+}
+.voletwo .voletwoContainer .btnBlock {
+  width: 100%;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+@media screen and (min-width: 570px) {
+  .voletwo .voletwoContainer .btns {
+    border-radius: 3rem;
+    flex-direction: row;
+  }
+  .voletwo .voletwoContainer .voletwoInputs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 480px) {
+  .voletwo .voletwoContainer .voletwoInputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 680px) {
+  .voletwo .voletwoContainer .btns {
+    border-radius: 3rem;
+    flex-direction: row;
+  }
+  .voletwo .voletwoContainer .voletwoInputs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .voletwo .voletwoContainer .btns {
+    width: 70%;
+    border-radius: 3rem;
+    flex-direction: row;
+  }
+  .voletwo .voletwoContainer .voletwoInputs {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .voletwo .voletwoContainer .voletwoInputs .singleInput .texts input {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .voletwo .voletwoContainer .voletwoInputs {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 27px;
+  }
+  .container {
+    width: 75%;
+    margin: auto;
+  }
+  .section {
+    padding: 6rem 0 4rem;
+  }
+  .voletwo .voletwoContainer .btns {
+    width: 50%;
+  }
+}/*# sourceMappingURL=Voletwo.css.map */

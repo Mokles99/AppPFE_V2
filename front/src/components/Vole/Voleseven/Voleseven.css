@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Spartan:wght@300;400;500&display=swap");
+:root {
+  --PrimaryColorvole: hsl(225, 50%, 48%);
+  --SecondaryColorvole: hsl(180, 17%, 95%);
+  --colorOnevole: hsl(15, 74%, 70%);
+  --colorTwovole: hsl(28, 100%, 82%);
+  --HoverColorvole: hsl(225, 56%, 59%);
+  --whiteColorvole: hsl(0, 0%, 100%);
+  --blackColorvole: hsl(0, 0%, 12%);
+  --textColorvole: hsl(240, 1%, 48%);
+  --borderColorvole: hsl(0, 0%, 83%);
+  --whiteColorDeamvole: hsl(0, 0%, 93%);
+  --greyBgvole: hsl(0, 0%, 96%);
+  --greyTextvole: rgb(145, 145, 145);
+  --inputColorvole: hsl(330, 12%, 97%);
+  --boxShadowvole: box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  --transition: .4s ease-in-out;
+}
+
+.Volesubscribe {
+  background: var(--SecondaryColorvole);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Spartan", sans-serif;
+  transition: 0.2s ease;
+}
+.Volesubscribe .sectionContainer {
+  text-align: center;
+}
+.Volesubscribe .sectionContainer .inputDiv {
+  margin-top: 1rem;
+  flex-direction: column;
+  background: var(--whiteColorvole);
+  border-radius: 1rem;
+}
+.Volesubscribe .sectionContainer .inputDiv input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 1rem 0.5rem;
+}
+.Volesubscribe .sectionContainer .inputDiv input::-moz-placeholder {
+  font-size: 13px;
+  opacity: 0.7;
+}
+.Volesubscribe .sectionContainer .inputDiv input::placeholder {
+  font-size: 13px;
+  opacity: 0.7;
+}
+.Volesubscribe .sectionContainer .inputDiv .btn {
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .Volesubscribe .sectionContainer {
+    max-width: 80%;
+    margin: auto;
+  }
+  .Volesubscribe .sectionContainer .inputDiv {
+    flex-direction: row;
+    padding: 0 0.5rem;
+    border-radius: 3rem;
+  }
+}
+@media screen and (min-width: 570px) {
+  .Volesubscribe .sectionContainer {
+    max-width: 80%;
+    margin: auto;
+  }
+  .Volesubscribe .sectionContainer .inputDiv {
+    flex-direction: row;
+    padding: 0 0.5rem;
+    border-radius: 3rem;
+    justify-content: space-between;
+  }
+  .Volesubscribe .sectionContainer .inputDiv .btn {
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+}
+@media screen and (min-width: 960px) {
+  .subscribe .sectionContainer {
+    max-width: 70%;
+  }
+}
+@media screen and (min-width: 1106px) {
+  .subscribe .sectionContainer {
+    max-width: 60%;
+  }
+}
+@media screen and (min-width: 1332px) {
+  .subscribe .sectionContainer {
+    max-width: 50%;
+  }
+}/*# sourceMappingURL=Voleseven.css.map */

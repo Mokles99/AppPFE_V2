@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Spartan:wght@300;400;500&display=swap");
+
+
+:root{
+  --PrimaryColorvole: hsl(225, 50%, 48%);
+  --SecondaryColorvole: hsl(180, 17%, 95%);
+  --colorOnevole: hsl(15, 74%, 70%);
+  --colorTwovole: hsl(28, 100%, 82%);
+  --HoverColorvole: hsl(225, 56%, 59%); 
+  --whiteColorvole: hsl(0, 0%, 100%);
+  --blackColorvole: hsl(0, 0%, 12%);
+  --textColorvole: hsl(240, 1%, 48%);
+  --borderColorvole: hsl(0, 0%, 83%);
+  --whiteColorDeamvole: hsl(0, 0%, 93%);
+  --greyBgvole: hsl(0, 0%, 96%);
+  --greyTextvole: rgb(145, 145, 145);
+  --inputColorvole: hsl(330, 12%, 97%);
+  --boxShadowvole:  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  --transition: .4s ease-in-out;
+}
+.voletwo{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: "Spartan", sans-serif;
+        transition: .2s ease;
+    .voletwoContainer{
+        width: 100%;
+        padding: 1.5rem;
+        border: 2px solid var(--greyBgvole);
+        border-radius: 16px;
+        row-gap: 2rem;
+        //
+        
+
+        .btns{
+            background: var(--SecondaryColorvole);
+            padding: .5rem;
+            border-radius: 1rem; //This will be 3rem on wider width
+            flex-direction: column;
+            width: 100%;
+            margin: auto;
+
+            .singleBtn{
+                padding: .8rem 1.5rem;
+                font-size: 13px;
+                border-radius: 3rem;
+                width: 80%; 
+                text-align: center;
+                
+                &:hover{
+                    background: var(--PrimaryColorvole);
+                    color: var(--whiteColorvole);
+                    font-weight: 500;
+                    transition: .4s ease;
+                }
+
+            }
+            .active{
+                background: var(--PrimaryColorvole);
+                color: var(--whiteColorvole);
+                font-weight: 500;
+            }
+        }
+
+        .voletwoInputs{
+            width: 100%;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            .voletwoInput{  
+               .voleiconDiv{
+                    padding: 16px 10px;
+                    border-radius: 3rem;
+                    background: var(--SecondaryColorvole);
+                    margin-right: 1rem;
+                    .icon{
+                        color: var(--blackColorvole);
+                        opacity: .7;
+                    }
+                }
+
+                .texts{
+                    h4{
+                        padding-top: 0;
+                        padding-bottom: .7rem;
+                        color: var(--blackColorvole);
+                        font-weight: 700;
+                    }
+                    input{
+                        width: 95%;
+                        border: none;
+                        outline: none;
+                        background: transparent;
+                        &::placeholder{
+                            font-size: 12px;
+                            opacity: .5;
+                        }
+                    }
+                }
+            }
+        }
+
+        .btnBlock{
+            width: 100%;
+            justify-content: center;
+            gap: .5rem;
+        }
+    }
+}
+
+@media screen and (min-width: 570px){
+.voletwo{
+    .voletwoContainer{
+
+        .btns{
+            border-radius: 3rem; //This will be 3rem on wider width
+            flex-direction: row;
+        }
+
+        .voletwoInputs{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
+}
+@media screen and (min-width: 480px) {
+ 
+    .voletwo{
+        .voletwoContainer{
+            .voletwoInputs{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    }
+}
+@media screen and (min-width: 680px){
+.voletwo{
+    .voletwoContainer{
+
+        .btns{
+            border-radius: 3rem; //This will be 3rem on wider width
+            flex-direction: row;
+        }
+
+        .voletwoInputs{
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+}
+}
+@media screen and (min-width: 768px ){
+.voletwo{
+    .voletwoContainer{
+        .btns{
+            width: 70%;
+            border-radius: 3rem;
+            flex-direction: row;
+        }
+
+        .voletwoInputs{
+            grid-template-columns: repeat(4,1fr);
+
+            .singleInput{  
+                .texts{
+                    input{
+                         width: 100%;
+
+                    }
+                }
+            }
+        }
+
+        
+    }
+}
+}
+@media screen and (min-width: 960px ){
+.voletwo{
+
+    .voletwoContainer{
+        .voletwoInputs{
+            grid-template-columns: repeat(5,1fr);
+        } 
+    }
+}
+}
+
+@media screen and (min-width: 1024px ){
+
+    // Default Styling =========>
+    p{
+        font-size: 15px;  
+        line-height: 25px;       
+    }
+    
+    h4{
+        font-size: 20px;
+    }
+    
+    h2{
+        font-size: 27px;
+    }
+
+    .container{
+        width: 75%;
+        margin: auto;
+    }
+
+    .section{
+        padding: 6rem 0 4rem;
+    }
+    .voletwo{
+
+        .voletwoContainer{
+            .btns{
+                width: 50%;
+
+            }  
+        }
+    }
+}
+// ::selection{
+//     background: var(--PrimaryColorvole);
+//     color: var(--whiteColorvole);
+// }
+
+// ::-webkit-scrollbar{
+//     width: 10px;
+//     background: var(--greyBgvole);
+// }
+// ::-webkit-scrollbar-thumb{
+//     background: var(--PrimaryColorvole);
+//     border-radius: 10px;
+// }

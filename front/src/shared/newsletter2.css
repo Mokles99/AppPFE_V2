@@ -1,0 +1,102 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, #8BF0FD, #0073A8);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190,190,190);
+    --inputColor:rgb(239,239,239);
+    --bodyColor:rgb(240,240,246);
+    --cardBG: rgb(225,225,235);
+}
+
+body {
+    font-size: 14px;
+    color: var(--textColor);
+    background: var(--bodyColor);
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+}
+
+.newsletter {
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter-img {
+    max-width: 90%;
+}
+
+.newsletter-content {
+    background: var(--gradientColor);
+    background: repeating-radial-gradient(circle, #0073a8, transparent 10%);
+    background-size: 1em 1em;
+    opacity: 0.9;
+    padding: 20px;  
+    margin: 10px;
+    border-radius: 10px;
+    width: 120%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.newsletter-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter-input {
+    display: flex;
+    align-items: center;
+    background: var(--whiteColor);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.newsletter-input input {
+    border: none;
+    font-size: 1rem;
+    color: var(--SecondaryColor);
+    flex: 1;
+}
+
+.newsletter-input input:focus {
+    outline: none;
+}
+
+.newsletter-btn {
+    padding: 0.5rem 1rem;
+    background: var(--SecondaryColor);
+    color: var(--whiteColor);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.newsletter-btn:hover {
+    background: var(--PrimaryColor);
+}
+
+.newsletter-content p {
+    color: var(--greyText);
+    font-size: 1rem;
+}
+
+.part5 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}

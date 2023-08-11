@@ -1,0 +1,83 @@
+:root{
+    --PrimaryColor:hsl(199,100%,33%);
+    --primaryHover:#0c988a;
+    --secHoverColor:#253b53;
+    --SecondaryColor :hsl(187,85%,43%);
+    --gardientColor: linear-gardient(to right, hsl(187, 76%, 56%),hsl(199,100%,33%));
+    /* --gardientColor: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,181,202,1) 51%, rgba(0,115,168,1) 100%); */
+    --whiteColor: hsl(0,0%,100%);
+    --blackColor:hsl(201,33%,16%);
+    --textColor:hsl(240,4%,36%);
+    --whiteColorDeam:hsl(0,0%,93%);
+    --greyText: rgb(190,190,190);
+    --greyBg: hsl(0, 0%, 96%); 
+    --inputColor:rgb(239,239,239);
+    --bodyColor:rgb(240,240,246);
+    --cardBG : rgb(225,225,235);
+  }
+.review{
+    // background: var(--greyBg);
+    .secContainer-review{
+            .secTitle-review{
+            color: var(--textColor);
+            font-size: 45px;
+            text-align: center;
+            padding-left: 9.5rem;
+        
+            }
+        
+    .reviewContainer{
+        // position: relative;
+        // background: white;
+        // box-shadow: 0 3px 5px rgb(218,218,218);
+        // padding: 1.5rem;
+        // text-align: center;
+        // border-radius: 10px;
+        // transition: .4s ease;
+     margin-top: 4rem;
+     gap: 1rem;
+     display: grid ;
+     grid-template-columns: repeat(3,1fr);
+     .singleReview{
+        margin-top: 3rem;
+        position: relative;
+        background: white;
+        box-shadow: 0 3px 5px rgb(218,218,218);
+        padding:1.5rem;
+        text-align:center;
+        border-radius: 40px;
+        transition: .4s ease;
+
+        &:hover{
+            transform: translateY(-10px);
+        }
+
+        .imgDiv{
+            position: absolute;
+            height:80px;
+            width:80px;
+            right:50%;
+            left:50%;
+            top:-23%;
+            border-radius: 50%;
+            overflow: hidden;
+            transform: translateX(-50%);
+            border:10px solid rgb(240 240 246);
+
+
+        }
+
+        p{
+            padding: 1rem;
+            line-height: 1.3rem;
+        }
+        .name{
+            color:var(--PrimaryColor);
+            font-weight: 600;
+        }
+     }
+
+    }
+}
+    
+  }

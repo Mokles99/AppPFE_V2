@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Spartan:wght@300;400;500&display=swap");
+
+
+:root{
+  --PrimaryColorvole: hsl(225, 50%, 48%);
+  --SecondaryColorvole: hsl(180, 17%, 95%);
+  --colorOnevole: hsl(15, 74%, 70%);
+  --colorTwovole: hsl(28, 100%, 82%);
+  --HoverColorvole: hsl(225, 56%, 59%); 
+  --whiteColorvole: hsl(0, 0%, 100%);
+  --blackColorvole: hsl(0, 0%, 12%);
+  --textColorvole: hsl(240, 1%, 48%);
+  --borderColorvole: hsl(0, 0%, 83%);
+  --whiteColorDeamvole: hsl(0, 0%, 93%);
+  --greyBgvole: hsl(0, 0%, 96%);
+  --greyTextvole: rgb(145, 145, 145);
+  --inputColorvole: hsl(330, 12%, 97%);
+  --boxShadowvole:  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  --transition: .4s ease-in-out;
+}
+
+.travelers{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Spartan", sans-serif;
+    transition: .2s ease;
+   
+    .sectionContainer{
+      text-align: center;
+  
+      .travelersContainer{
+          margin-top: 1rem;
+          gap: 1.5rem;
+          .singleTraveler{
+              position: relative;
+              height: 280px;
+              width: 85%;
+              max-width: 250px;
+              overflow: hidden;
+              border-radius: 10rem;
+              gap: 1rem;
+              margin: auto;
+              height: 320px;
+  
+              .destinationImage, .travelerImage, .travelerName{
+                  position: absolute;
+              }
+  
+              .destinationImage{
+                  height: 100%;
+                  width: 100%;
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  left: 0;
+                  object-fit: cover;
+              }
+  
+              .travelerImage{
+                  height: 50px;
+                  width: 50px;
+                  object-fit: cover;
+                  border-radius: 50%;
+                  bottom: 30px;
+                  left: 40%;
+                  transform: translateX(-50%);
+                  border: 5px solid rgba(255, 255, 255, 0.637);
+                  transition: var(--transition);
+                  animation: identifier 2.3s infinite;
+              }
+              @keyframes identifier {
+                  0%{
+                      transform: translateY(0px);
+  
+                  }
+                  50%{
+                      transform: translateY(8px)
+                  }
+                  100%{
+                      transform: translateY(0px)
+                  }
+              }
+             
+  
+              .travelerName{
+                  bottom: -100%;
+                  width: 100%;
+                  height: max-content;
+                  background: var(--whiteColorvole);
+                  padding: 1.5rem 1rem;
+                  transition: var(--transition);
+                  animation: yeaMove 2.3s infinite;
+                  
+  
+                  span{
+                      display: block;
+                      color: var(--blackColorvole);
+                      font-weight: 700;
+                  }
+                  p{
+                      color: var(--PrimaryColorvole);
+                      font-style: italic;
+                  }
+  
+              }
+              @keyframes yeaMove {
+                  0%{
+                      border-radius: 0rem;
+  
+                  }
+                  50%{
+                      border-radius: 2rem;
+                  }
+                  100%{
+                      border-radius: 0rem;
+                  }
+              }
+  
+              &:hover{
+                  .travelerName{
+                      bottom: 0;
+                      transition: 1s ease-in-out;
+                  }
+                  .travelerImage{
+                      bottom: 110px;
+                      transition: 1s ease-in-out;
+                  }
+              }
+  
+          }
+  
+      }
+  
+    }
+  }
+  @media screen and (min-width: 480px) {
+  
+    
+    .travelers{
+        .sectionContainer{
+            .travelersContainer{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px){
+.travelers{
+    .sectionContainer{
+        .travelersContainer{
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+}
+}
+
+
+@media screen and (min-width: 960px){
+.travelers{
+    .sectionContainer{
+        .travelersContainer{
+            margin: 3rem 0;
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
+}
+}
+// ::selection{
+//     background: var(--PrimaryColorvole);
+//     color: var(--whiteColorvole);
+// }
+
+// ::-webkit-scrollbar{
+//     width: 10px;
+//     background: var(--greyBgvole);
+// }
+// ::-webkit-scrollbar-thumb{
+//     background: var(--PrimaryColorvole);
+//     border-radius: 10px;
+// }

@@ -1,0 +1,85 @@
+/* MyComponent.css */
+.modal-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    outline: none;
+    focus: outline-none;
+}
+
+.modal-content {
+    position: relative;
+    width: auto;
+    margin: 6rem auto;
+    max-width: 48rem;
+}
+
+.modal-card {
+    border: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    outline: none;
+    focus: outline-none;
+}
+
+.modal-header {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 1.25rem;
+    border-bottom: 1px solid #cbd5e0;
+    border-radius: 0.5rem;
+}
+
+.header-title {
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
+.close-button {
+    color: #f56565;
+    background: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.375rem 1.5rem;
+    font-size: 0.875rem;
+    outline: none;
+    focus: outline-none;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+    transition: all 0.15s linear;
+}
+
+.modal-body {
+    position: relative;
+    padding: 1.5rem;
+    flex-grow: 1;
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border-top: 1px solid #cbd5e0;
+    border-radius: 0.5rem;
+}
+
+.save-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #fc8181, #4a5568);
+    border-radius: 0.5rem;
+    color: white;
+    width: 33.3333%;
+}

@@ -1,0 +1,27 @@
+
+
+.featureabout {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+  
+  .featureabout-icon {
+    position: relative;
+    margin-right: 2rem;
+  }
+  
+  .innerabout-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .featureabout-text h3 {
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: var(--light-blue);
+  }

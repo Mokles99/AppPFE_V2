@@ -1,0 +1,107 @@
+.tours{
+    .secContainer-tour{
+        .secTitle-tours{
+                    color: var(--textColor);
+                    font-size: 45px;
+                    text-align: center;
+        }
+        .tourContainer{
+            display: grid;
+            gap: 1rem;
+
+            .singleTour{
+                width:100%;
+                position: relative;
+                border: 1px solid var(--greyColor);
+                padding-bottom: 1rem;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: 4s ease;
+                gap: 2rem;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+
+                &:hover{
+                    background: var(--greyColor);
+                    
+                }
+                .imgDiv{
+                   
+                    height: 200px;
+    width: 100%;
+    border-radius: 1rem;
+    border: 5px solid var(--greyBg);
+    box-shadow: 0 2px 8px 2px rgb(178 178 178 / 41%);
+    overflow: hidden;
+
+                    img{
+                        height: 100%;
+                        object-fit: cover;
+                        transition: .3s ease-in-out;
+                    }
+                    &:hover{
+                        img{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                .tourInfo{
+                    padding: 0 1rem;
+
+                    .tourTitle{
+                        font-size:15px;
+                        color:var(--PrimaryColor);
+                        font-weight:600;
+                    }
+                    .stars_review{
+                        align-items: center;
+                        gap: .5rem;
+                        padding: 1rem 0;
+
+                        .stars{
+                            color:rgb(255,215,0);
+                            .icon{
+                                font-size:14px;
+
+                            }
+                        }
+                        .custReview{
+                            font-size: 13px;
+                            transform:translateY(-2px);
+                        }
+                    }
+                    p{
+                        padding-bottom:1rem ;
+                    }
+                    .btn{
+                        padding: 0.6rem 1.5rem;
+                        background-image: linear-gradient(to right, #10b5ca, #00a5c4, #0094bd, #0084b3, #0073a8);
+                        border-radius: 3rem;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        color:white;
+                        transition: .3s ease;
+                    }
+                    &:hover{
+                        color:var(--PrimaryColor);
+                        border:2px solid var(--greyText);
+                    }
+                }
+            }
+
+            .price{
+                position: absolute;
+                padding: 10px;
+                background-image: linear-gradient(to right, #10b5ca, #00a5c4, #0094bd, #0084b3, #0073a8);
+                top:0;
+                right:0;
+                color:white;
+                font-size: 15px;
+                font-weight:800;
+
+            }
+
+        }
+    }
+}

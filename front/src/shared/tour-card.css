@@ -1,0 +1,211 @@
+:root{
+    --PrimaryColor:hsl(199,100%,33%);
+    --primaryHover:#0c988a;
+    --secHoverColor:#253b53;
+    --SecondaryColor :hsl(187,85%,43%);
+    --gardientColor: linear-gardient(to right, hsl(187, 76%, 56%),hsl(199,100%,33%));
+    /* --gardientColor: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,181,202,1) 51%, rgba(0,115,168,1) 100%); */
+    --whiteColor: hsl(0,0%,100%);
+    --blackColor:hsl(201,33%,16%);
+    --textColor:hsl(240,4%,36%);
+    --whiteColorDeam:hsl(0,0%,93%);
+    --greyText: rgb(190,190,190);
+    --greyBg: hsl(0, 0%, 96%); 
+    --inputColor:rgb(239,239,239);
+    --bodyColor:rgb(240,240,246);
+    --cardBG : rgb(225,225,235);
+  }
+
+.tour-imge img{
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+
+}
+
+.card{
+
+        /* border: none !important; */
+        box-shadow: #000 0px 0px 2px px;
+        padding: 0rem;
+        border: 1px solid #0073a8;
+        margin: 5px;
+        min-height: 299px;
+        border-radius: 8px;
+}
+
+.tour-card .card {
+  background-color: #e1e1eb;
+}
+.tour-card  .card .card-body{
+  padding: 1rem;
+}
+.tour-imge{
+    position: relative;
+}
+
+.tour-imge span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width:max-content;
+    height:max-content;
+    z-index: 10;
+    background: var(--PrimaryColor);
+    color:#fff;
+    padding: 0.3rem 0.5rem;
+    border-radius: 3px 0 0 0;
+}
+
+.card-top span i{
+    color:var(--SecondaryColor);
+}
+.tours-rating{
+   font-size: .9rem;
+   color:var(--textColor);
+
+}
+.tours-location{
+    color:var(--primaryHover);
+    font-weight:500;
+    font-size:.9rem;
+}
+
+.tours-rating i,.tours-location i{
+    font-size:1rem;
+
+}
+.tour-title{
+    margin-top:1rem;
+    font-size:1.1rem;
+    cursor:pointer;
+}
+.tour-title a{
+    text-decoration: none;
+    color:var(--PrimaryColor);
+    transition: .3s;
+}
+.tour-title a:hover{
+    color:var(--SecondaryColor);
+}
+.card-buttom h5{
+    color:var(--SecondaryColor);
+    font-size: 1.1rem;
+    font-weight: 700;
+
+}
+.card-buttom h5 span{
+    font-weight: 500;
+    color:var(--PrimaryColor);
+    font-size: 0.8rem;
+}
+.booking-btn{
+    padding: 0.6rem 1.5rem;
+    background-image: linear-gradient(to right, #10b5ca, #00a5c4, #0094bd, #0084b3, #0073a8);
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+/* 
+.maintour {
+    width: 100%;
+  }
+.maintour .secContenttour {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .maintour .secContenttour .singleDestinationtour {
+    height: 100%;
+    display: grid;
+    row-gap: 10px;
+    border-radius: 10px;
+    align-items: center;
+    background: var(--cardBG);
+    box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+    overflow: hidden;
+  }
+  .maintour .secContenttour .singleDestinationtour:hover {
+    background: var(--cardHover);
+    box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
+    transition: 0.3s ease;
+  }
+  .maintour .secContenttour .singleDestinationtour .imageDiv {
+    height: 180px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .maintour .secContenttour .singleDestinationtour .imageDiv img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transition: 2s ease;
+  }
+  .maintour .secContenttour .singleDestinationtour .imageDiv:hover img {
+    transform: scale(1.1);
+  }
+  .maintour .secContenttour .singleDestinationtour .cardInfo {
+    padding: 1rem;
+  }
+  .maintour .secContenttour .singleDestinationtour .cardInfo .desTitle {
+    color: var(--blackColor);
+    font-size: 1.25rem;
+  }
+  .maintour .secContenttour .singleDestinationtour .cardInfo .continent {
+    gap: 0.5rem;
+  }
+  .maintour .secContenttour .singleDestinationtour .cardInfo .continent .icon {
+    color: var(--textColor);
+    font-size: 18px;
+  }
+  .maintour .secContenttour .singleDestinationtour .cardInfo .continent .name {
+    color: var(--textColor);
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .maintour .secContenttour .singleDestinationtour .cardInfo .fees {
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-top: 1.5px solid var(--greyText);
+    border-bottom: 1.5px solid var(--greyText);
+  }
+  .maintour .secContenttour .singleDestinationtour .cardInfo .fees .grade {
+    color: var(--textColor);
+    max-width: 100px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .maintour .secContenttour .singleDestinationtour .cardInfo .fees .grade small {
+    text-align: center;
+    background-image: linear-gradient(to right, #10b5ca, #00a5c4, #0094bd, #0084b3, #0073a8);
+    border-radius: 1rem;
+    color: var(--whiteColor);
+    padding: 1px 10px;
+    font-size: 10px;
+  }
+  .maintour .secContenttour .singleDestinationtour .cardInfo .fees .price {
+    font-size: 2 rem;
+    color: var(--blackColor);
+  }
+  .maintour .secContenttour .singleDestinationtour .cardInfo .desc {
+    font-size: 13.5px;
+    color: var(--textColor);
+    font-weight: 500;
+  }
+  .maintour .secContenttour .singleDestinationtour .cardInfo .btn {
+    margin-top: 1rem;
+    color: var(--whiteColor);
+    font-weight: 600;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .maintour .secContenttour .singleDestinationtour .cardInfo .btn .icon {
+    align-self: center;
+    font-size: 18px;
+  } */
+  

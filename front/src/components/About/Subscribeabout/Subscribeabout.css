@@ -1,0 +1,84 @@
+section#subscribe {
+  background: url(../../../Assets/subscribe-bg.png);
+  text-align: center;
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 95%;
+  margin: auto;
+  border-radius: 20px;
+  
+  background-attachment: fixed;
+}
+
+.subscribe h2 {
+  font-size: 3rem;
+  font-weight: 200;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+  padding-bottom: 1rem;
+}
+
+form > * {
+  width: 100%;
+  max-width: 50rem;
+  /* margin: 3rem auto; */
+}
+
+.inputabout {
+  padding: 1rem;
+  background: transparent;
+  border: 1px solid #777;
+  border-radius: 30px 0 0 30px;
+  color: #fff;
+  outline: none;
+  width: 60%;
+  font-size: 1.6rem;
+   
+}
+::placeholder { 
+  color:gray !important;
+  font-size: 16px;
+}
+.btnabout {
+  padding: 1rem !important;
+
+  background-image: linear-gradient(to right, #10b5ca, #00a5c4, #0094bd, #0084b3, #0378af);
+  border: 1px solid var(--form-button) !important;
+  border-radius:5px 30px 30px 5px  !important;
+  margin-left: 1rem;
+  color: #fff !important;
+  font-size: 1.1rem !important;
+  font-weight: 500 !important;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  margin: 2rem;
+  padding: 1rem;
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.social-icon:hover {
+  background-image: linear-gradient(to right, #10b5ca, #00a5c4, #0094bd, #0084b3, #0378af);
+}
+
+@media screen and (max-width: 600px) {
+  form input {
+    width: 60%;
+  }
+}

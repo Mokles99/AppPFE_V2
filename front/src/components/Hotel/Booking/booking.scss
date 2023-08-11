@@ -1,0 +1,107 @@
+:root{
+    --PrimaryColor:hsl(199,100%,33%);
+    --SecondaryColor :hsl(187,85%,43%);
+    --gardientColor: linear-gardient(to right, #8BF0FD,#0073A8);
+    --whiteColor: hsl(0,0%,100%);
+    --blackColor:hsl(201,33%,16%);
+    --textColor:hsl(240,4%,36%);
+    --whiteColorDeam:hsl(0,0%,93%);
+    --greyText: rgb(190,190,190);
+    --inputColor:rgb(239,239,239);
+    --bodyColor:rgb(240,240,246);
+    --cardBG : rgb(225,225,235);
+  }
+
+
+.booking{
+    padding:2rem;
+    border-radius: .5rem;
+    border: 1px solid rgb(229, 231, 235);
+    position: sticky;
+    top:80px;
+}
+
+.booking__top h3{
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+.booking__top h3 span{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color:var(--textColor);
+
+}
+
+.booking__top span{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--textColor);
+}
+
+.booking__top span i {
+    color:var(--SecondaryColor);
+
+}
+.booking__top{
+    padding-bottom:2rem;
+    border-bottom: 1px solid rgb(229, 231, 235);
+
+
+}
+.booking__form{
+    padding-top:2rem;
+}
+
+.booking__form h5{
+    margin-bottom: 1rem;
+}
+.booking__form input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: .5rem;
+    color: var(--textColor);
+    font-size:1rem;
+    border-radius: 1px solid rgb(229,231,235);
+    border:none;
+    border-bottom: 1px;
+}
+.booking__form input:focus{
+    outline: none;
+
+
+
+}
+
+.booking__info-form{
+    padding: 1rem;
+    border:1px solid rgb(229,231,235);
+    
+
+}
+
+.booking__botton {
+    margin-top: 1rem;
+    li{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        h5{
+            font-size:1rem;
+            color:var(--textColor);
+            font-weight: 500;
+        }
+        span{
+            font-size:1rem;
+            color:var(--textColor);
+            font-weight: 500;
+        }
+    }
+}
+.total {
+    h5,span{
+        color:var(--PrimaryColor) !important;
+        font-weight: 700 !important;
+        font-size: 1.1rem !important;
+    }
+}

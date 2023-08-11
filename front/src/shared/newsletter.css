@@ -1,0 +1,83 @@
+
+
+:root{
+    --PrimaryColor:hsl(199,100%,33%);
+    --SecondaryColor :hsl(187,85%,43%);
+    --gardientColor: linear-gardient(to right, #8BF0FD,#0073A8);
+    --whiteColor: hsl(0,0%,100%);
+    --blackColor:hsl(201,33%,16%);
+    --textColor:hsl(240,4%,36%);
+    --whiteColorDeam:hsl(0,0%,93%);
+    --greyText: rgb(190,190,190);
+    --inputColor:rgb(239,239,239);
+    --bodyColor:rgb(240,240,246);
+    --cardBG : rgb(225,225,235);
+  }
+  .newsletter{
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 20px;
+    width:100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.newsletter-img{
+    width: 100%;
+
+}
+.newsletter-content{
+    background-image: linear-gradient(to right, #10b5ca, #00a5c4, #0094bd, #0084b3, #0073a8);
+    background: repeating-radial-gradient(circle,#0073a8, transparent 20%);
+        background-size: 2em 2em;
+        /* background-color: #babbe3; */
+        opacity: 0.45;
+    padding: 50px 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 20px;
+    width:100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+}
+.newsletter-content h2{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.newsletter-input{
+    display:flex;
+    align-items: center;
+    background:#fff;
+    padding:0.5rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.newsletter-input input{
+    border: none;
+    font-size: 1rem;
+    color:#cae5f4
+}
+.newsletter-input input:focus{
+    outline: none;
+}
+.newsletter-btn{
+    padding:0.5rem 1.5rem !important;
+    background: var(--SecondaryColor) !important;
+    color: #fff!important;
+    font-size: 1.1rem !important;
+
+}
+.newsletter-content p{
+    color:var(--textColor);
+    font-size: 1.1rem;
+
+}
+.part5{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    /* padding-left: 1.5rem;
+    padding-right: 1.5rem; */
+   
+}

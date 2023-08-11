@@ -1,0 +1,57 @@
+:root {
+  --primaryColor:hsl(94, 55%, 56%);
+  --hoverColor:hsl(93, 75%, 76%);
+  --paleGreen:hsl(96,75%,89%);
+  --whiteColor:hsl(0,0%,100%);
+  --blackColor:hsl(0,0%,18%);
+  --greyText:hsl(0,0%,75%);
+  --bgColor:hsl(113, 11%,97%);
+  --inputColor:hsl(330,12%,97%);
+  --inputColor:hsl(154,14%,90%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.dashboardgr {
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+}
+.dashboardgr .dashboardContainer {
+  height: 95vh;
+  width: 95%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgb(194, 194, 194);
+}
+
+@media screen and (max-width: 500px) {
+  .heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 918px) {
+  .heading {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 990px) {
+  .heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}/*# sourceMappingURL=dashboardgr.css.map */

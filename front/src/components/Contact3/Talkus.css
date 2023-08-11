@@ -1,0 +1,128 @@
+@import url("~leaflet/dist/leaflet.css");
+.leaflet-container {
+  width: 100%;
+  height: 100vh;
+}
+
+:root {
+  --primaryColorContact:#00eaff;
+  --primaryHoverContact:hsl(185,92%,41%);
+  --secondaryColorContact:rgb(150,162,188);
+  --paragraphColorContact:rgb(127,127,175);
+  --BgColorContact:#031130;
+  --formColorContact:rgb(2,15,29);
+  --projectCardColorContact:#072440;
+  --textColorContact:#dae4fb;
+  --headerHeightContact:3rem;
+}
+
+.talk .talkContainer {
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  display: grid;
+  margin-bottom: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.talk .talkContainer .socialtalk {
+  justify-content: center;
+}
+.talk .talkContainer .socialtalk h3 {
+  color: var(--secondaryColorContact);
+  padding: 1rem 0;
+  text-align: center;
+}
+.talk .talkContainer .socialtalk .cardstalk {
+  gap: 1rem;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.talk .talkContainer .socialtalk .cardstalk .cardtalk {
+  display: grid;
+  align-items: center;
+  row-gap: 10px;
+  padding: 1.5rem;
+  width: 240px;
+  background: rgb(225,225,235);
+  border-radius: 20px;
+  text-align: center;
+}
+.talk .talkContainer .socialtalk .cardstalk .cardtalk .icon {
+  color: var(--primaryColorContact);
+  font-size: 18px;
+}
+.talk .talkContainer .socialtalk .cardstalk .cardtalk .userName {
+  color: var(--secondaryColorContact);
+  font-weight: 600;
+}
+.talk .talkContainer .socialtalk .cardstalk .cardtalk a {
+  justify-content: center;
+  gap: 5px;
+  color: var(--primaryColorContact);
+  font-weight: 600;
+  cursor: pointer;
+}
+.talk .talkContainer .socialtalk .cardstalk .cardtalk a .icon {
+  font-size: 20px;
+}
+.talk .talkContainer .socialtalk .cardstalk .cardtalk a:hover {
+  color: var(--primaryColorContact);
+}
+.talk .talkContainer .socialtalk .cardstalk .cardtalk a:hover .icon {
+  transform: translateX(10px);
+}
+.talk .talkContainer .formtalk {
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+  padding-top: 1.7rem;
+}
+.talk .talkContainer .formtalk h3 {
+  text-align: center;
+  color: var(--secondaryColorContact);
+}
+.talk .talkContainer .formtalk form {
+  width: 100%;
+  text-align: center;
+}
+.talk .talkContainer .formtalk form input, .talk .talkContainer .formtalk form textarea {
+  height: 1rem;
+  width: 90%;
+  padding: 1.5rem 0.5rem;
+  border-radius: 10px;
+  background: none;
+  border: 2px solid var(--secondaryColorContact);
+  margin: 0.5rem 0;
+  outline: none;
+  color: var(--textColorContact);
+  font-weight: 600;
+}
+.talk .talkContainer .formtalk form input::-moz-placeholder, .talk .talkContainer .formtalk form textarea::-moz-placeholder {
+  color: var(--secondaryColorContact);
+  opacity: 0.5;
+}
+.talk .talkContainer .formtalk form input::placeholder, .talk .talkContainer .formtalk form textarea::placeholder {
+  color: var(--secondaryColorContact);
+  opacity: 0.5;
+}
+.talk .talkContainer .formtalk form textarea {
+  height: 150px;
+}
+.talk .talkContainer .formtalk form .formBtn {
+  display: block;
+  margin: auto;
+  width: 90%;
+  border: none;
+  /* padding: 1rem 0; */
+  border-radius: 20px;
+  font-size: 17px;
+  background: var(--primaryColorContact);
+  color: var(--BgColorContact);
+  font-weight: 600;
+  cursor: pointer;
+}
+.talk .talkContainer .formtalk form .formBtn:hover {
+  background: var(--primaryColorContact);
+}/*# sourceMappingURL=Talkus.css.map */

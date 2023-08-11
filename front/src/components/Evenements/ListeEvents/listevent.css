@@ -1,0 +1,91 @@
+.tours .secContainer-tour .secTitle-tours {
+  color: var(--textColor);
+  font-size: 45px;
+  text-align: center;
+}
+.tours .secContainer-tour .tourContainer {
+  display: grid;
+  gap: 1rem;
+}
+.tours .secContainer-tour .tourContainer .singleTour {
+  width: 100%;
+  position: relative;
+  border: 1px solid var(--greyColor);
+  padding-bottom: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 4s ease;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.tours .secContainer-tour .tourContainer .singleTour:hover {
+  background: var(--greyColor);
+}
+.tours .secContainer-tour .tourContainer .singleTour .imgDiv {
+  height: 200px;
+  width: 100%;
+  border-radius: 1rem;
+  border: 5px solid var(--greyBg);
+  box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.41);
+  overflow: hidden;
+}
+.tours .secContainer-tour .tourContainer .singleTour .imgDiv img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+.tours .secContainer-tour .tourContainer .singleTour .imgDiv:hover img {
+  transform: scale(1.1);
+}
+.tours .secContainer-tour .tourContainer .singleTour .tourInfo {
+  padding: 0 1rem;
+}
+.tours .secContainer-tour .tourContainer .singleTour .tourInfo .tourTitle {
+  font-size: 15px;
+  color: var(--PrimaryColor);
+  font-weight: 600;
+}
+.tours .secContainer-tour .tourContainer .singleTour .tourInfo .stars_review {
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+.tours .secContainer-tour .tourContainer .singleTour .tourInfo .stars_review .stars {
+  color: rgb(255, 215, 0);
+}
+.tours .secContainer-tour .tourContainer .singleTour .tourInfo .stars_review .stars .icon {
+  font-size: 14px;
+}
+.tours .secContainer-tour .tourContainer .singleTour .tourInfo .stars_review .custReview {
+  font-size: 13px;
+  transform: translateY(-2px);
+}
+.tours .secContainer-tour .tourContainer .singleTour .tourInfo p {
+  padding-bottom: 1rem;
+}
+.tours .secContainer-tour .tourContainer .singleTour .tourInfo .btn {
+  padding: 0.6rem 1.5rem;
+  background-image: linear-gradient(to right, #10b5ca, #00a5c4, #0094bd, #0084b3, #0073a8);
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s ease;
+}
+.tours .secContainer-tour .tourContainer .singleTour .tourInfo:hover {
+  color: var(--PrimaryColor);
+  border: 2px solid var(--greyText);
+}
+.tours .secContainer-tour .tourContainer .price {
+  position: absolute;
+  padding: 10px;
+  background-image: linear-gradient(to right, #10b5ca, #00a5c4, #0094bd, #0084b3, #0073a8);
+  top: 0;
+  right: 0;
+  color: white;
+  font-size: 15px;
+  font-weight: 800;
+}/*# sourceMappingURL=listevent.css.map */
